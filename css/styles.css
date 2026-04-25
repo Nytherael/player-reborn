@@ -1,0 +1,63 @@
+/* index.html  */
+.carousel-img {
+    height: 88vh;
+    object-fit: cover;
+}
+
+/* about.html */
+.about-hero {
+    height: 40vh;
+    min-height: 250px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #0f172a, #1e293b, #1e3a8a, #7c3aed);
+    background-size: 300% 300%;
+    animation: gradientShift 10s ease infinite;
+}
+
+
+
+/* servers */
+.thumbnail-width {
+    width: auto;
+    height: 250px;
+    overflow: hidden;
+}
+
+.server-hero {
+    background: linear-gradient(135deg, #0f172a, #1e293b, #1e3a8a, #7c3aed);
+    background-size: 300% 300%;
+    animation: gradientShift 10s ease infinite;
+    color: white;
+}
+
+.server-text-color {
+    color: white;
+}
+
+.card:hover {
+    border: rgb(182, 177, 177) solid;
+    border-width: 2px;
+}
+
+.length {
+    max-height: 180px;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
