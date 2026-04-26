@@ -21,6 +21,12 @@ h1 {
   font-style: normal;
 }
 
+.rajdhani-medium {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
 p {
   font-family: "Rajdhani", sans-serif;
   font-weight: 400;
