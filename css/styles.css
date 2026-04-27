@@ -39,6 +39,35 @@ p {
   object-fit: cover;
 }
 
+.intro {
+  background: introGradient
+}
+
+.carousel-item::before {
+
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.4) 30%,
+        rgba(0,0,0,0.4) 60%,
+        rgba(0,0,0,0.4) 100%
+    );
+    z-index: 1;
+}
+
+.carousel-caption {
+    z-index: 2;
+}
+
+.intro {
+  height: 40vh;
+  background: linear-gradient(    #3b82f6,     #60a5fa);
+  background-size: 300% 300%;
+  animation: introShift 10s ease infinite;
+}
+
 /* about.html */
 .about-hero {
   height: 40vh;
@@ -88,5 +117,15 @@ p {
 
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes introShift {
+  0% {
+    background-position: 0% 25%;
+  }
+
+  20% {
+    background-position: 15% 45%
   }
 }

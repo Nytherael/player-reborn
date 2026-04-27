@@ -25,7 +25,6 @@
 			<!--Container-->
 			<div class="container-fluid">
 				<img src="assets/images/playerreborn/logo-bg-removed.png" alt="player reborn logo" height="60">
-				<a href="#" class="navbar-brand">Player Reborn</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
 					aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -35,10 +34,10 @@
 				<div class="collapse navbar-collapse" id="navbar-items">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a href="#" class="nav-link active" aria-current="page">Home</a>
+							<a href="index.html" class="nav-link active" aria-current="page">Home</a>
 						</li>
 						<li class="nav-item">
-							<a href="about.html" class="nav-link">About Us</a>
+							<a href="about.html" class="nav-link">About</a>
 						</li>
 						<li class="nav-item">
 							<a href="servers.html" class="nav-link" aria-expanded="false">Servers</a>
@@ -56,34 +55,39 @@
 		</nav>
 	</section>
 
+	<!--Intro-->
+	<section>
+		<!-- TODO: Make this work and look better -->
+
+		<div class="row text-center h-100 p-5 intro">
+			<h1>PLAYER <span class="reborn">REBORN</span></h1>
+			<p id="online-count" class="fw-bold">Checking who's online...</p>
+
+		</div>
+
+
+	</section>
+
 	<!--Hero-->
 	<section>
 		<div id="myCarousel" class="carousel slide mb-6 rajdhani-regular" data-bs-ride="carousel">
 			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
-					aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+					aria-label="Slide 1" aria-current="true"></button>
 				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-					class="active" aria-current="true"></button>
+					class=""></button>
 				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
 					class=""></button>
 			</div>
 			<div class="carousel-inner">
-				<div class="carousel-item">
-					<img src="assets/images/playerreborn/banner-2.png" alt="banner-2" class="w-100 carousel-img">
-					<div class="container">
-						<div class="carousel-caption">
-							<h1>Play Your Way!</h1>
-							<p class="rajdhani-medium">No matter your platform, there's a place for you here.</p>
-						</div>
-					</div>
-				</div>
+
 				<div class="carousel-item active">
 					<img src="assets/images/playerreborn/banner-3.png" alt="banner-3" class="w-100 carousel-img">
 					<div class="container">
 						<div class="carousel-caption text-start">
-							<h1>No More Dead Servers</h1>
-							<p class="rajdhani-medium">Find active players, real conversations, and games you can jump
-								into right now.</p>
+							<h1>Find People to Play With</h1>
+							<p class="rajdhani-medium">Find players, real conversations, and games you can jump into.
+							</p>
 							<p>
 								<a href="https://discord.gg/playerreborn" target="_blank" rel="noopener noreferrer"
 									class="btn btn-primary">Join Discord</a>
@@ -91,18 +95,29 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="carousel-item">
+					<img src="assets/images/playerreborn/banner-2.png" alt="banner-2" class="w-100 carousel-img">
+					<div class="container">
+						<div class="carousel-caption text-center">
+							<h1>Play Your Way!</h1>
+							<p class="rajdhani-medium">No matter your platform, there’s a place for you here.</p>
+						</div>
+					</div>
+				</div>
+
 				<div class="carousel-item">
 					<img src="assets/images/playerreborn/banner-1.png" alt="banner-1" class="w-100 carousel-img">
 					<div class="container">
 						<div class="carousel-caption text-end">
-							<h1>A Home for Every Player</h1>
-							<p class="rajdhani-medium">Explore a community built for every kind of player. From
-								competitive
-								battles to relaxing worlds, Player Reborn brings it all together.</p>
+							<h1>Where Community Comes First</h1>
+							<p class="rajdhani-medium">More than just servers — a community built to connect, play, and
+								stay.</p>
 						</div>
 					</div>
 				</div>
 			</div>
+
 			<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Previous</span>
@@ -115,63 +130,48 @@
 	</section>
 
 	<!--Information-->
-	<section class="py-5 text-center">
+	<section class="py-5 text-center features">
 		<div class="container">
-			<h2 class="mb-3">Why Player Reborn?</h2>
-			<p class="lead">A community built for players who actually want to play.</p>
+			<h2 class="mb-3">Why Choose Player Reborn?</h2>
+			<p class="lead">Built for players who want to play and connect.</p>
 
 			<div class="row mt-4">
 				<div class="col-md-4">
 					<h5>Active Servers</h5>
-					<p>Always something happening—no empty lobbies.</p>
+					<p>Designed to keep games active and players engaged.</p>
 				</div>
 				<div class="col-md-4">
 					<h5>Real Community</h5>
-					<p>Jump into voice, chat, and games without the usual chaos.</p>
+					<p>Connect with players who actually play, not just sit in channels.</p>
 				</div>
 				<div class="col-md-4">
-					<h5>Multiple Games</h5>
-					<p>From survival to competitive, there's always something to play.</p>
+					<h5>Stay Connected</h5>
+					<p>Don’t lose your group when the game changes.</p>
 				</div>
 			</div>
-		</div>
-	</section>
+			<!-- <div class="text-center p-4">
+				<a href="https://discord.gg/playerreborn" target="_blank" class="btn btn-lg btn-primary">
+					Join the Community
+				</a>
 
-	<!--Join The Community-->
-	<section class="text-center py-4">
-		<a href="https://discord.gg/playerreborn" target="_blank" class="btn btn-lg btn-primary">
-			Join the Community
-		</a>
+			</div> -->
+		</div>
+		<div>
+
+		</div>
 	</section>
 
 	<!--Footer-->
 	<section>
 		<footer class="d-flex flex-wrap justify-content-md-center align-items-center py-3 border-top bg-body-tertiary">
-
 			<p class="mb-0 text-body-secondary">© 2026 Player Reborn</p>
-			<!-- <ul class="nav col-md-4 justify-content-end">
-					<li class="nav-item">
-						<a href="#" class="nav-link px-2 text-body-secondary">Home</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link px-2 text-body-secondary">Features</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link px-2 text-body-secondary">About</a>
-					</li>
-				</ul> -->
 		</footer>
 	</section>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
 		crossorigin="anonymous"></script>
+	<script src="script.js"></script>
 </body>
 
 </html>
