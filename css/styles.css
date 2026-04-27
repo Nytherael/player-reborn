@@ -63,9 +63,37 @@ p {
 
 .intro {
   height: 40vh;
-  background: linear-gradient(    #3b82f6,     #60a5fa);
+  background: linear-gradient(
+  135deg,
+  transparent 40%,
+  rgba(59,130,246,0.3) 43%,   /* soft blue tail */
+  rgba(59,130,246,0.6) 47%,   /* main blue */
+  rgba(147,51,234,0.6) 52%,   /* main purple */
+  rgba(192,132,252,0.4) 56%,  /* purple glow front */
+  transparent 60%
+);
   background-size: 300% 300%;
   animation: introShift 10s ease infinite;
+  background-color: #111827;
+  
+}
+
+.intro h1 {
+  color: white;
+  font-size: 5rem;
+}
+
+.reborn {
+  color: #7c3aed;
+}
+
+.features {
+  color: white;
+  background-color: #111827;
+}
+
+#online-count {
+  color: whitesmoke;
 }
 
 /* about.html */
@@ -122,10 +150,10 @@ p {
 
 @keyframes introShift {
   0% {
-    background-position: 0% 25%;
+    background-position: 100% 100%;
   }
 
-  20% {
-    background-position: 15% 45%
+  100% {
+    background-position: 0% 100%
   }
 }
