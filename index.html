@@ -16,19 +16,19 @@
 		rel="stylesheet">
 </head>
 
-<body>
+<body class="home">
 
 	<!--Navigation-->
 	<section>
 		<!--Start of Navbar-->
-		<nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Twelfth navbar">
+		<nav class="navbar navbar-expand-lg text-danger rajdhani-large" aria-label="Twelfth navbar">
 			<!--Container-->
 			<div class="container-fluid">
 				<img src="assets/images/playerreborn/logo-bg-removed.png" alt="player reborn logo" height="60">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+				<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
 					aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
-				</button>
+				</button> -->
 
 				<!--First Div-->
 				<div class="collapse navbar-collapse" id="navbar-items">
@@ -46,9 +46,10 @@
 
 					<!--Login Buttons-->
 					<div class="text-end">
-						<button type="button" class="btn btn-outline-primary me-2">Login</button>
+						<!-- <button type="button" class="btn btn-outline-primary me-2">Login</button> -->
 						<a href="https://discord.gg/playerreborn" target="_blank" rel="noopener noreferrer"
-							class="btn btn-primary">Join Discord</a>
+							class="btn buttons">Join Discord</a>
+
 					</div>
 				</div>
 			</div>
@@ -57,106 +58,124 @@
 
 	<!--Intro-->
 	<section>
-		<!-- TODO: Make this work and look better -->
-
-		<div class="row text-center h-100 p-5 intro">
-			<h1>PLAYER <span class="reborn">REBORN</span></h1>
-			<p id="online-count" class="fw-bold">Checking who's online...</p>
-
+		<div class="d-flex flex-column text-center justify-content-center intro">
+			<h1 class="lh-0 display-2">PLAYER <span class="reborn">REBORN</span></h1>
+			<h2 class="fw-bold lh-0">Your Gaming Hub</h2>
 		</div>
+
 
 
 	</section>
 
 	<!--Hero-->
-	<section>
-		<div id="myCarousel" class="carousel slide mb-6 rajdhani-regular" data-bs-ride="carousel">
-			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-					aria-label="Slide 1" aria-current="true"></button>
-				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-					class=""></button>
-				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-					class=""></button>
+	<section class="container-fluid mb-5 text-center">
+		<div class="border-color pt-5">
+			<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+				class="bi bi-controller controller" viewBox="0 0 16 16">
+				<path
+					d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z" />
+				<path
+					d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27" />
+			</svg>
+			<h2>GAMES</h2>
+			<p class="mb-5">See what we're playing right now</p>
+
+			<div class="row g-4 px-4 mb-5 text-start justify-content-center">
+
+				<!--Baldurs Gate 3-->
+				<div class="col-md-3 d-flex">
+					<div class="card w-100 border-color">
+						<img src="assets/images/game-cover/baldurs-gate-3.jpg" alt="baldurs gate 3 cover art"
+							class="card-img-top">
+						<div class="card-body pb-0 bg-card rajdhani-medium color-white">
+							<p><span class="text-success online-color">●</span> Active</p>
+							<h5>Baldurs Gate 3</h5>
+							<p class="color-primary">2 Player(s) Online</p>
+						</div>
+					</div>
+				</div>
+
+				<!--Phasmophobia-->
+				<div class="col-md-3 d-flex">
+					<div class="card border-color w-100">
+						<img src="assets/images/game-cover/phasmophobia.jpeg" alt="phasmophobia cover art"
+							class="card-img-top">
+						<div class="card-body pb-0 bg-card rajdhani-medium color-white">
+							<p><span class="online-color">●</span> Most Active</p>
+							<h5>Baldurs Gate 3</h5>
+							<p class="color-primary">3 Player(s) Online</p>
+						</div>
+					</div>
+				</div>
+
+				<!--Rocket League-->
+				<div class="col-md-3 d-flex">
+					<div class="card border-color w-100">
+						<img src="assets/images/game-cover/rocket-league.jpeg" alt="rocket league cover art"
+							class="card-img-top">
+						<div class="card-body pb-0 bg-card rajdhani-medium color-white">
+							<p><span class="color-primary">●</span> Recently Played</p>
+							<h5>Rocket League</h5>
+							<p class="color-primary">0 Player(s) Online</p>
+						</div>
+					</div>
+				</div>
+
+				<!--Halo Inifinite-->
+				<div class="col-md-3 d-flex">
+					<div class="card border-color w-100">
+						<img src="assets/images/game-cover/halo-inifinte.jpg" alt="halo inifinite cover art"
+							class="card-img-top">
+						<div class="card-body pb-0 bg-card rajdhani-medium color-white">
+							<p><span class="color-primary">●</span> Recently Played</p>
+							<h5>Halo Infinite</h5>
+							<p class="color-primary">0 Player(s) Online</p>
+						</div>
+					</div>
+				</div>
+
 			</div>
-			<div class="carousel-inner">
-
-				<div class="carousel-item active">
-					<img src="assets/images/playerreborn/banner-3.png" alt="banner-3" class="w-100 carousel-img">
-					<div class="container">
-						<div class="carousel-caption text-start">
-							<h1>Find People to Play With</h1>
-							<p class="rajdhani-medium">Find players, real conversations, and games you can jump into.
-							</p>
-							<p>
-								<a href="https://discord.gg/playerreborn" target="_blank" rel="noopener noreferrer"
-									class="btn btn-primary">Join Discord</a>
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="carousel-item">
-					<img src="assets/images/playerreborn/banner-2.png" alt="banner-2" class="w-100 carousel-img">
-					<div class="container">
-						<div class="carousel-caption text-center">
-							<h1>Play Your Way!</h1>
-							<p class="rajdhani-medium">No matter your platform, there’s a place for you here.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="carousel-item">
-					<img src="assets/images/playerreborn/banner-1.png" alt="banner-1" class="w-100 carousel-img">
-					<div class="container">
-						<div class="carousel-caption text-end">
-							<h1>Where Community Comes First</h1>
-							<p class="rajdhani-medium">More than just servers — a community built to connect, play, and
-								stay.</p>
-						</div>
-					</div>
-				</div>
+			<div class="containe py-5 mb-5">
+				<a href="servers.html" class="display-6 p-4 game-link border-purple">View All Games We Play</a>
 			</div>
-
-			<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
 		</div>
 	</section>
 
 	<!--Information-->
-	<section class="py-5 text-center features">
-		<div class="container">
-			<h2 class="mb-3">Why Choose Player Reborn?</h2>
-			<p class="lead">Built for players who want to play and connect.</p>
+	<section class="container-fluid text-center mb-5">
+		<div class="border-color">
+			<div class="row p-5">
+				<div class="col-md-4">
+					<h3><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+							class="bi bi-server server" viewBox="0 0 16 16">
+							<path
+								d="M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4c0 1.473-2.985 2.667-6.667 2.667S1.333 5.473 1.333 4z" />
+							<path
+								d="M1.333 6.334v3C1.333 10.805 4.318 12 8 12s6.667-1.194 6.667-2.667V6.334a6.5 6.5 0 0 1-1.458.79C11.81 7.684 9.967 8 8 8s-3.809-.317-5.208-.876a6.5 6.5 0 0 1-1.458-.79z" />
+							<path
+								d="M14.667 11.668a6.5 6.5 0 0 1-1.458.789c-1.4.56-3.242.876-5.21.876-1.966 0-3.809-.316-5.208-.876a6.5 6.5 0 0 1-1.458-.79v1.666C1.333 14.806 4.318 16 8 16s6.667-1.194 6.667-2.667z" />
+						</svg> SERVERS</h3>
+					<p class="subtle">Check what's live and running</p>
+					<a href="servers.html" class="game-link">View servers</a>
+				</div>
 
-			<div class="row mt-4">
 				<div class="col-md-4">
-					<h5>Active Servers</h5>
-					<p>Designed to keep games active and players engaged.</p>
+					<h3><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+							class="bi bi-people community" viewBox="0 0 16 16">
+							<path
+								d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
+						</svg> COMMUNITY</h3>
+					<p class="subtle">Connect, Chat, and play together.</p>
+					<a href="https://discord.gg/playerreborn" target="_blank" class="game-link">Join the community</a>
 				</div>
+
 				<div class="col-md-4">
-					<h5>Real Community</h5>
-					<p>Connect with players who actually play, not just sit in channels.</p>
+					<h3 id="online-count">Checking for users...</h3>
+					<h6 class="muted">MEMBERS ONLINE</h6>
+
 				</div>
-				<div class="col-md-4">
-					<h5>Stay Connected</h5>
-					<p>Don’t lose your group when the game changes.</p>
-				</div>
+
 			</div>
-			<!-- <div class="text-center p-4">
-				<a href="https://discord.gg/playerreborn" target="_blank" class="btn btn-lg btn-primary">
-					Join the Community
-				</a>
-
-			</div> -->
-		</div>
-		<div>
 
 		</div>
 	</section>

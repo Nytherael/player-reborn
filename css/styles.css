@@ -1,14 +1,16 @@
-/* All */
-h1 {
-  font-family: "Orbitron", sans-serif;
-  font-style: normal;
+:root {
+  --background-color: #0B0E16;
+  --primary-color: #111827;
+  --border-color: #1F2937;
+  --online-color: #22C55E;
+  --purple-primary: #8B5CF6;
+  --purple-dark: #6D28D9;
+  --muted: #9CA3AF;
+  --subtle: #6B7280;
+  --purple-light: #A78BFA;
 }
 
-/* h2 {
-  font-family: "Orbitron", sans-serif;
-  font-style: normal;
-} */
-
+/* Fonts */
 .rajdhani-light {
   font-family: "Rajdhani", sans-serif;
   font-weight: 300;
@@ -27,42 +29,15 @@ h1 {
   font-style: normal;
 }
 
-p {
+.rajdhani-semibold {
   font-family: "Rajdhani", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 
-/* index.html  */
-.carousel-img {
-  height: 88vh;
-  object-fit: cover;
-}
-
-.intro {
-  background: introGradient
-}
-
-.carousel-item::before {
-
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to right,
-        rgba(0,0,0,0.4) 30%,
-        rgba(0,0,0,0.4) 60%,
-        rgba(0,0,0,0.4) 100%
-    );
-    z-index: 1;
-}
-
-.carousel-caption {
-    z-index: 2;
-}
-
-.intro {
-  height: 40vh;
+body {
+  background-color: var(--background-color) !important;
+  color: whitesmoke !important;
   background: linear-gradient(
   135deg,
   transparent 40%,
@@ -72,88 +47,154 @@ p {
   rgba(192,132,252,0.4) 56%,  /* purple glow front */
   transparent 60%
 );
-  background-size: 300% 300%;
-  animation: introShift 10s ease infinite;
-  background-color: #111827;
+  background-size: 200% 200%;
+  animation: introShift 10s linear infinite;
+}
+
+p {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-style: normal;
   
 }
 
-.intro h1 {
-  color: white;
-  font-size: 5rem;
-}
-
-.reborn {
-  color: #7c3aed;
-}
-
-.features {
-  color: white;
-  background-color: #111827;
-}
-
-#online-count {
+/* Home Page */
+.intro {
+  height: 40vh;
   color: whitesmoke;
 }
 
-/* about.html */
-.about-hero {
-  height: 40vh;
-  min-height: 250px;
-  color: white;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  background: linear-gradient(135deg, #0f172a, #1e293b, #1e3a8a, #7c3aed);
-  background-size: 300% 300%;
-  animation: gradientShift 10s ease infinite;
+.reborn {
+  color: var(--purple-dark);
 }
 
-/* servers */
+#online-count {
+  color: var(--online-color);
+}
+
+.controller {
+  color: var(--purple-primary);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: fill;
+}
+
+.game-link {
+  text-decoration: none;
+  color: var(--purple-light);
+}
+
+.game-link:hover {
+  color: var(--purple-dark);
+}
+
+.border-purple {
+  border: 2px var(--purple-primary) solid;
+  border-radius: 8px;
+}
+
+.server {
+  color: blue;
+}
+
+.community {
+  color: var(--purple-primary);
+}
+
+/* About Page */
+
+
+/* Servers Page */
+
+
 .thumbnail-width {
   width: auto;
   height: 250px;
   overflow: hidden;
 }
 
-.server-hero {
-  background: linear-gradient(135deg, #0f172a, #1e293b, #1e3a8a, #7c3aed);
-  background-size: 300% 300%;
-  animation: gradientShift 10s ease infinite;
-  color: white;
+/* All */
+h1 {
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
 }
 
-.server-text-color {
-  color: white;
+h2 {
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+}
+
+.buttons {
+  background-color: var(--purple-dark) !important;
+  border: 2px var(--purple-primary) solid !important;
+  font-family: "Rajdhani" sans-serif !important;
+  font-weight: 600 !important;
+  color: whitesmoke !important;
+}
+
+.buttons:hover {
+  background-color: var(--purple-light) !important;
+}
+
+.navbar a {
+  color: whitesmoke !important;
+}
+
+.active {
+  font-weight: bolder !important;
+}
+
+.color-white {
+  color: whitesmoke !important;
+}
+
+.color-primary {
+  color: var(--purple-primary);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.subtle {
+  color: var(--subtle);
+}
+
+.bg-card {
+  background-color: var(--primary-color);
+  color: whitesmoke !important;
 }
 
 .card:hover {
-  border: rgb(182, 177, 177) solid;
-  border-width: 2px;
+  border: 2px var(--purple-dark) solid !important;
 }
 
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+.border-color {
+  border: 2px var(--border-color) solid !important;
+  border-radius: 8px;
 }
 
+.online-color {
+  color: var(--online-color);
+}
+
+
+/* Gradient Shifts */
 @keyframes introShift {
   0% {
     background-position: 100% 100%;
   }
 
   100% {
-    background-position: 0% 100%
+    background-position: 0% 0%
   }
 }
