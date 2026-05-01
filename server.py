@@ -10,7 +10,7 @@ def after_request(response):
 
 @app.route("/status")
 def all_status():
-    discord = requests.get("https://discord.com/api/guilds/1330977532824129616/widget.json").json()
+    discord = requests.get("DISCORD_API_KEY_HERE").json()
     return {
         "discord_online": discord["presence_count"],
         "minecraft": {
