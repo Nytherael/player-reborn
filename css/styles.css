@@ -279,7 +279,7 @@ footer {
   border-top: 1px solid var(--border);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 820px) {
   .join-btn {
     width: auto;
     display: inline-flex;
@@ -302,6 +302,10 @@ footer {
 
   .server-list {
     text-align: center;
+  }
+
+  .hero-logo {
+    display: none;
   }
 }
 
